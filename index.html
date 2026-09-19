@@ -122,100 +122,43 @@
   </header>
 
   <main class="flex-grow pt-24 pb-20">
-    <!-- Hero Section -->
-    <section id="hero" class="relative px-4 sm:px-6 py-12 md:py-20 max-w-6xl mx-auto">
+    <!-- Hero Section (без DSP консоли) -->
+    <section id="hero" class="relative px-4 sm:px-6 py-12 md:py-20 max-w-5xl mx-auto">
       <div class="absolute -top-10 left-1/2 -translate-x-1/2 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>
 
-      <div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
-        <div class="lg:col-span-7 space-y-6 text-left">
-          <div class="inline-flex items-center space-x-2 px-3.5 py-1 rounded-full bg-studio-900/90 border border-slate-700/60 text-xs font-mono text-cyan-300">
-            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-            <span data-i18n="hero_status">Accepting new projects • Fast 48h turnaround</span>
-          </div>
-
-          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-[1.12]">
-            <span data-i18n="hero_title_1">Transforming raw stems into</span>
-            <span class="bg-gradient-to-r from-cyan-400 via-sky-300 to-indigo-400 bg-clip-text text-transparent" data-i18n="hero_title_2"> industry-standard commercial sound</span>
-          </h1>
-
-          <p data-i18n="hero_desc" class="text-slate-400 text-base sm:text-lg leading-relaxed max-w-xl">
-            Welcome to YOURWOWMIX. High-definition mixing and analog-modeled mastering built to compete at full club volume, in studio headphones, and on smart speakers. Hear the unpolished raw track versus the mastered track in real-time below.
-          </p>
-
-          <div class="flex flex-wrap items-center gap-4 pt-2">
-            <a href="#player-section" class="px-6 py-3.5 rounded-xl bg-gradient-to-r from-cyan-400 to-sky-500 text-studio-950 font-bold text-sm shadow-lg shadow-cyan-500/20 hover:opacity-95 transition flex items-center space-x-2">
-              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-              <span data-i18n="hero_btn_listen">Listen to A/B Comparison</span>
-            </a>
-            <a href="#portfolio" data-i18n="hero_btn_portfolio" class="px-6 py-3.5 rounded-xl bg-studio-850 hover:bg-studio-800 border border-slate-700/70 text-slate-200 font-semibold text-sm transition">
-              Explore Portfolio
-            </a>
-          </div>
-
-          <div class="grid grid-cols-2 gap-4 pt-4 border-t border-slate-800/80 max-w-xs">
-            <div>
-              <div class="text-xl sm:text-2xl font-black text-white font-mono">0 ms</div>
-              <div data-i18n="stat_latency" class="text-xs text-slate-400">Zero-latency A/B</div>
-            </div>
-            <div>
-              <div class="text-xl sm:text-2xl font-black text-white font-mono">LUFS Ready</div>
-              <div data-i18n="stat_streaming" class="text-xs text-slate-400">Streaming Standards</div>
-            </div>
-          </div>
+      <div class="relative z-10 space-y-6 text-left">
+        <div class="inline-flex items-center space-x-2 px-3.5 py-1 rounded-full bg-studio-900/90 border border-slate-700/60 text-xs font-mono text-cyan-300">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+          <span data-i18n="hero_status">Accepting new projects • Fast 48h turnaround</span>
         </div>
 
-        <div class="lg:col-span-5">
-          <div class="glass-panel p-6 rounded-3xl relative overflow-hidden border border-slate-800 shadow-2xl">
-            <div class="flex items-center justify-between pb-4 border-b border-slate-800">
-              <span class="text-xs font-mono text-slate-400 uppercase tracking-wider flex items-center space-x-2">
-                <span class="w-2 h-2 rounded-full bg-cyan-400"></span>
-                <span data-i18n="meter_title">DSP Monitoring Console</span>
-              </span>
-              <div class="flex space-x-1.5">
-                <span class="w-2.5 h-2.5 rounded-full bg-red-500/60"></span>
-                <span class="w-2.5 h-2.5 rounded-full bg-amber-500/60"></span>
-                <span class="w-2.5 h-2.5 rounded-full bg-emerald-500/60"></span>
-              </div>
-            </div>
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-[1.15]">
+          <span data-i18n="hero_title_1">Your music deserves the charts!</span>
+          <span class="block bg-gradient-to-r from-cyan-400 via-sky-300 to-indigo-400 bg-clip-text text-transparent mt-1" data-i18n="hero_title_2">Transforming raw demos and AI tracks into polished, professional songs.</span>
+        </h1>
 
-            <div class="space-y-4 py-4 font-mono text-xs text-slate-300">
-              <div class="space-y-1">
-                <div class="flex justify-between text-[11px] text-slate-400">
-                  <span data-i18n="meter_lufs">LUFS Target (Streaming Platforms)</span>
-                  <span class="text-cyan-400">-9.0 LUFS</span>
-                </div>
-                <div class="w-full bg-studio-900 h-2 rounded-full overflow-hidden">
-                  <div class="bg-gradient-to-r from-emerald-400 via-cyan-400 to-rose-500 h-full w-[84%]"></div>
-                </div>
-              </div>
+        <p data-i18n="hero_desc" class="text-slate-400 text-base sm:text-lg leading-relaxed max-w-3xl">
+          Welcome to YOURWOWMIX. We bring your sound to perfection so your music hits hard on any system — from phone speakers and wireless earbuds to car audio and club sound systems. Hit play right now and compare the raw multitrack to the finished master.
+        </p>
 
-              <div class="space-y-1">
-                <div class="flex justify-between text-[11px] text-slate-400">
-                  <span data-i18n="meter_peak">True Peak Inter-Sample</span>
-                  <span class="text-emerald-400">-0.5 dBTP</span>
-                </div>
-                <div class="w-full bg-studio-900 h-2 rounded-full overflow-hidden">
-                  <div class="bg-emerald-400 h-full w-[95%]"></div>
-                </div>
-              </div>
+        <div class="flex flex-wrap items-center gap-4 pt-2">
+          <a href="#player-section" class="px-6 py-3.5 rounded-xl bg-gradient-to-r from-cyan-400 to-sky-500 text-studio-950 font-bold text-sm shadow-lg shadow-cyan-500/20 hover:opacity-95 transition flex items-center space-x-2">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+            <span data-i18n="hero_btn_listen">Listen to A/B Comparison</span>
+          </a>
+          <a href="#portfolio" data-i18n="hero_btn_portfolio" class="px-6 py-3.5 rounded-xl bg-studio-850 hover:bg-studio-800 border border-slate-700/70 text-slate-200 font-semibold text-sm transition">
+            Explore Portfolio
+          </a>
+        </div>
 
-              <div class="space-y-1">
-                <div class="flex justify-between text-[11px] text-slate-400">
-                  <span data-i18n="meter_width">Stereo Field Correlation</span>
-                  <span class="text-sky-400">+0.89</span>
-                </div>
-                <div class="w-full bg-studio-900 h-2 rounded-full overflow-hidden">
-                  <div class="bg-sky-400 h-full w-[78%]"></div>
-                </div>
-              </div>
-            </div>
-
-            <div class="p-3 bg-studio-900/90 rounded-xl border border-slate-800/80 text-xs text-slate-400 flex items-start space-x-3">
-              <svg class="w-5 h-5 text-cyan-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-              <span data-i18n="meter_info">
-                The A/B player utilizes a precision dual-engine audio pipeline. Instant switching happens with millisecond micro-crossfades so your ears hear the pure tonal transformation without lag.
-              </span>
-            </div>
+        <div class="grid grid-cols-2 gap-4 pt-4 border-t border-slate-800/80 max-w-xs">
+          <div>
+            <div class="text-xl sm:text-2xl font-black text-white font-mono">0 ms</div>
+            <div data-i18n="stat_latency" class="text-xs text-slate-400">Zero-latency A/B</div>
+          </div>
+          <div>
+            <div class="text-xl sm:text-2xl font-black text-white font-mono">LUFS Ready</div>
+            <div data-i18n="stat_streaming" class="text-xs text-slate-400">Streaming Standards</div>
           </div>
         </div>
       </div>
@@ -235,7 +178,6 @@
               <span class="text-xs font-mono tracking-widest text-cyan-400 uppercase font-semibold">YOURWOWMIX • A/B Engine</span>
             </div>
             <h2 id="current-track-title" class="text-2xl sm:text-3xl font-bold text-white mt-1">Way Home — Katya Shanty</h2>
-            <p id="current-track-desc" class="text-xs sm:text-sm text-slate-400">Raw tracking vs finished commercial vocal mix &amp; master</p>
           </div>
 
           <!-- Dual Toggle (A / B) -->
@@ -346,6 +288,7 @@
         <!-- Genre Filter Tabs -->
         <div class="flex flex-wrap gap-2" id="genre-filters">
           <button data-filter="all" class="filter-btn active px-3.5 py-1.5 rounded-xl text-xs font-semibold bg-cyan-500 text-studio-950 transition" data-i18n="filter_all">All Genres</button>
+          <button data-filter="Ethno-Folk" class="filter-btn px-3.5 py-1.5 rounded-xl text-xs font-semibold bg-studio-850 hover:bg-studio-800 text-slate-300 transition">Ethno-Folk</button>
           <button data-filter="Rock" class="filter-btn px-3.5 py-1.5 rounded-xl text-xs font-semibold bg-studio-850 hover:bg-studio-800 text-slate-300 transition" data-i18n="filter_rock">Rock / Metal</button>
           <button data-filter="Pop" class="filter-btn px-3.5 py-1.5 rounded-xl text-xs font-semibold bg-studio-850 hover:bg-studio-800 text-slate-300 transition" data-i18n="filter_pop">Pop / EDM</button>
           <button data-filter="Hip-Hop" class="filter-btn px-3.5 py-1.5 rounded-xl text-xs font-semibold bg-studio-850 hover:bg-studio-800 text-slate-300 transition" data-i18n="filter_hiphop">Hip-Hop / Trap</button>
@@ -366,10 +309,11 @@
         <p class="text-slate-400 text-sm mt-2" data-i18n="services_desc">Every package includes 3 free revision rounds, full instrumental/acapella exports, and radio/streaming loudness compliance.</p>
       </div>
 
-      <!-- 5-Card Responsive Pricing Grid -->
+      <!-- 6-Card Responsive Pricing Grid -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
         <!-- 01: Full Mix & Master (Flagship) -->
-        <div class="glass-panel p-7 rounded-3xl border-2 border-cyan-500/50 flex flex-col justify-between relative shadow-2xl shadow-cyan-500/10 lg:col-span-1 md:col-span-2">
+        <div class="glass-panel p-7 rounded-3xl border-2 border-cyan-500/50 flex flex-col justify-between relative shadow-2xl shadow-cyan-500/10">
           <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 px-3 py-0.5 rounded-full bg-cyan-400 text-studio-950 font-bold text-[11px] uppercase tracking-wide" data-i18n="badge_popular">
             Most Popular
           </div>
@@ -379,7 +323,7 @@
             </div>
             <h3 class="text-xl font-bold text-white" data-i18n="tier_mixmaster_title">Full Mixing + Mastering</h3>
             <p class="text-xs text-slate-400 mt-2 leading-relaxed" data-i18n="tier_mixmaster_desc">
-              Comprehensive multi-track treatment up to 48 stems: phase alignment, vocal treatment, dynamic balance, depth placement, and commercial master.
+              Frequency balancing, spatial design, dynamic processing, and dense layer arrangement for maximum clarity and punch. Plus mastering: loudness & dynamic matching to streaming, radio, and club standards, with full mono-compatibility and multi-device translation checks.
             </p>
             <div class="mt-6 mb-6">
               <span class="text-3xl font-black text-white font-mono" data-i18n="tier_mixmaster_price">FROM $120</span>
@@ -400,14 +344,46 @@
               </li>
             </ul>
           </div>
-          <a href="#contact" class="mt-8 block text-center py-3 rounded-xl bg-cyan-400 hover:bg-cyan-300 text-sm font-bold text-studio-950 transition shadow-lg shadow-cyan-500/25" data-i18n="btn_book_now">Book This Service</a>
+          <a href="#contact" onclick="selectService('Full Mixing + Mastering (FROM $120 / ОТ 11 000 ₽)')" class="mt-8 block text-center py-3 rounded-xl bg-cyan-400 hover:bg-cyan-300 text-sm font-bold text-studio-950 transition shadow-lg shadow-cyan-500/25" data-i18n="btn_book_now">Book This Service</a>
         </div>
 
-        <!-- 02: Stem / Stereo Mastering -->
+        <!-- 02: AI Remake (New Service) -->
         <div class="glass-panel p-7 rounded-3xl border border-slate-800 flex flex-col justify-between hover:border-slate-700 transition">
           <div>
             <div class="inline-block p-2 rounded-xl bg-studio-800 text-cyan-400 mb-4 font-mono text-xs">
-              02 • Mastering
+              02 • AI Production
+            </div>
+            <h3 class="text-xl font-bold text-white" data-i18n="tier_airemake_title">AI Remake (Turnkey AI Overhaul)</h3>
+            <p class="text-xs text-slate-400 mt-2 leading-relaxed" data-i18n="tier_airemake_desc">
+              Extracting harmonies, melodies, and structure from your generated AI audio file. Replacing low-bitrate artifact sounds with premium virtual instruments, pristine samples, and analog synthesizers. Re-recording with live vocals/performers based on the AI guide, followed by a complete multitrack mix & master.
+            </p>
+            <div class="mt-6 mb-6">
+              <span class="text-3xl font-black text-white font-mono" data-i18n="tier_airemake_price">FROM $250</span>
+              <span class="text-xs text-slate-400 font-normal" data-i18n="per_multitrack">/ song</span>
+            </div>
+            <ul class="space-y-2.5 text-xs text-slate-300">
+              <li class="flex items-center space-x-2">
+                <svg class="w-4 h-4 text-cyan-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                <span data-i18n="tier_airemake_feat1">Harmonic & melodic transcription</span>
+              </li>
+              <li class="flex items-center space-x-2">
+                <svg class="w-4 h-4 text-cyan-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                <span data-i18n="tier_airemake_feat2">Artifact removal & pro sound replacement</span>
+              </li>
+              <li class="flex items-center space-x-2">
+                <svg class="w-4 h-4 text-cyan-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                <span data-i18n="tier_airemake_feat3">Full multitrack mix and master</span>
+              </li>
+            </ul>
+          </div>
+          <a href="#contact" onclick="selectService('AI-ремейк (Перебивка ИИ-треков под ключ) (FROM $250 / ОТ 23 000 ₽)')" class="mt-8 block text-center py-3 rounded-xl bg-studio-850 hover:bg-studio-800 border border-slate-700 text-sm font-semibold text-white transition" data-i18n="btn_choose">Select Plan</a>
+        </div>
+
+        <!-- 03: Stem / Stereo Mastering -->
+        <div class="glass-panel p-7 rounded-3xl border border-slate-800 flex flex-col justify-between hover:border-slate-700 transition">
+          <div>
+            <div class="inline-block p-2 rounded-xl bg-studio-800 text-cyan-400 mb-4 font-mono text-xs">
+              03 • Mastering
             </div>
             <h3 class="text-xl font-bold text-white" data-i18n="tier_master_title">Stem / Stereo Mastering</h3>
             <p class="text-xs text-slate-400 mt-2 leading-relaxed" data-i18n="tier_master_desc">
@@ -432,14 +408,14 @@
               </li>
             </ul>
           </div>
-          <a href="#contact" class="mt-8 block text-center py-3 rounded-xl bg-studio-850 hover:bg-studio-800 border border-slate-700 text-sm font-semibold text-white transition" data-i18n="btn_choose">Select Plan</a>
+          <a href="#contact" onclick="selectService('Stem / Stereo Mastering (FROM $60 / ОТ 5 500 ₽)')" class="mt-8 block text-center py-3 rounded-xl bg-studio-850 hover:bg-studio-800 border border-slate-700 text-sm font-semibold text-white transition" data-i18n="btn_choose">Select Plan</a>
         </div>
 
-        <!-- 03: Vocal Tuning (Dedicated Service) -->
+        <!-- 04: Vocal Tuning -->
         <div class="glass-panel p-7 rounded-3xl border border-slate-800 flex flex-col justify-between hover:border-slate-700 transition">
           <div>
             <div class="inline-block p-2 rounded-xl bg-studio-800 text-cyan-400 mb-4 font-mono text-xs">
-              03 • Vocal Focus
+              04 • Vocal Focus
             </div>
             <h3 class="text-xl font-bold text-white" data-i18n="tier_vocal_title">Vocal Tuning & Alignment</h3>
             <p class="text-xs text-slate-400 mt-2 leading-relaxed" data-i18n="tier_vocal_desc">
@@ -464,14 +440,14 @@
               </li>
             </ul>
           </div>
-          <a href="#contact" class="mt-8 block text-center py-3 rounded-xl bg-studio-850 hover:bg-studio-800 border border-slate-700 text-sm font-semibold text-white transition" data-i18n="btn_choose">Select Plan</a>
+          <a href="#contact" onclick="selectService('Vocal Tuning & Alignment (FROM $50 / ОТ 4 500 ₽)')" class="mt-8 block text-center py-3 rounded-xl bg-studio-850 hover:bg-studio-800 border border-slate-700 text-sm font-semibold text-white transition" data-i18n="btn_choose">Select Plan</a>
         </div>
 
-        <!-- 04: Drum Editing & Quantization (Dedicated Service) -->
+        <!-- 05: Drum Editing & Quantization -->
         <div class="glass-panel p-7 rounded-3xl border border-slate-800 flex flex-col justify-between hover:border-slate-700 transition">
           <div>
             <div class="inline-block p-2 rounded-xl bg-studio-800 text-cyan-400 mb-4 font-mono text-xs">
-              04 • Rhythm Edit
+              05 • Rhythm Edit
             </div>
             <h3 class="text-xl font-bold text-white" data-i18n="tier_drums_title">Drum Editing & Quantization</h3>
             <p class="text-xs text-slate-400 mt-2 leading-relaxed" data-i18n="tier_drums_desc">
@@ -496,14 +472,14 @@
               </li>
             </ul>
           </div>
-          <a href="#contact" class="mt-8 block text-center py-3 rounded-xl bg-studio-850 hover:bg-studio-800 border border-slate-700 text-sm font-semibold text-white transition" data-i18n="btn_choose">Select Plan</a>
+          <a href="#contact" onclick="selectService('Drum Editing & Quantization (FROM $50 / ОТ 4 500 ₽)')" class="mt-8 block text-center py-3 rounded-xl bg-studio-850 hover:bg-studio-800 border border-slate-700 text-sm font-semibold text-white transition" data-i18n="btn_choose">Select Plan</a>
         </div>
 
-        <!-- 05: Restoration & Podcasts -->
+        <!-- 06: Restoration & Podcasts -->
         <div class="glass-panel p-7 rounded-3xl border border-slate-800 flex flex-col justify-between hover:border-slate-700 transition">
           <div>
             <div class="inline-block p-2 rounded-xl bg-studio-800 text-cyan-400 mb-4 font-mono text-xs">
-              05 • Spoken Audio
+              06 • Spoken Audio
             </div>
             <h3 class="text-xl font-bold text-white" data-i18n="tier_podcast_title">Restoration & Podcasts</h3>
             <p class="text-xs text-slate-400 mt-2 leading-relaxed" data-i18n="tier_podcast_desc">
@@ -528,7 +504,7 @@
               </li>
             </ul>
           </div>
-          <a href="#contact" class="mt-8 block text-center py-3 rounded-xl bg-studio-850 hover:bg-studio-800 border border-slate-700 text-sm font-semibold text-white transition" data-i18n="btn_choose">Select Plan</a>
+          <a href="#contact" onclick="selectService('Restoration & Podcasts (FROM $50 / ОТ 4 500 ₽)')" class="mt-8 block text-center py-3 rounded-xl bg-studio-850 hover:bg-studio-800 border border-slate-700 text-sm font-semibold text-white transition" data-i18n="btn_choose">Select Plan</a>
         </div>
       </div>
     </section>
@@ -561,6 +537,7 @@
               <label class="block text-xs font-mono text-slate-300 mb-1" data-i18n="form_service_label">Desired Service</label>
               <select id="form-service" class="w-full px-4 py-3 rounded-xl bg-studio-900 border border-slate-800 focus:border-cyan-400 focus:outline-none text-white text-sm">
                 <option data-i18n="opt_mixmaster">Full Mixing + Mastering (FROM $120 / ОТ 11 000 ₽)</option>
+                <option data-i18n="opt_airemake">AI Remake (FROM $250 / ОТ 23 000 ₽)</option>
                 <option data-i18n="opt_master">Stem / Stereo Mastering (FROM $60 / ОТ 5 500 ₽)</option>
                 <option data-i18n="opt_vocal">Vocal Tuning & Alignment (FROM $50 / ОТ 4 500 ₽)</option>
                 <option data-i18n="opt_drums">Drum Editing & Quantization (FROM $50 / ОТ 4 500 ₽)</option>
@@ -583,7 +560,7 @@
               Submit Project Request
             </button>
             <div id="form-status" class="text-xs font-mono text-emerald-400 hidden">
-              ✓ Request prepared! (Demo mode)
+              ✓ Request prepared!
             </div>
           </div>
         </form>
@@ -631,13 +608,10 @@
         id: "track-1",
         title: "Way Home",
         artist: "Katya Shanty",
-        genre: "Vocal",
+        genre: "Ethno-Folk",
         durationSec: 180,
-        desc: {
-          en: "Raw unmixed demo vocals & arrangement vs polished commercial master",
-          ru: "Сырой вокал и демо-аранжировка против готового коммерческого мастера"
-        },
-        tags: ["Vocal", "Pop"],
+        desc: { en: "", ru: "" },
+        tags: ["Ethno-Folk", "Vocal", "Pop"],
         urlBefore: "audio/Katya Shanty_Way Home_Befor.mp3", 
         urlAfter: "audio/Katya Shanty_Way Home_After.mp3",
         synthType: "synthwave"
@@ -648,10 +622,7 @@
         artist: "Iron Horizon",
         genre: "Rock",
         durationSec: 18,
-        desc: {
-          en: "Boxy garage drum and guitar recording vs massive, tight metalcore master",
-          ru: "Глухой гаражный микс барабанов и гитар против массивного Metal-мастера"
-        },
+        desc: { en: "", ru: "" },
         tags: ["Rock", "Metal"],
         urlBefore: "", 
         urlAfter: "",
@@ -663,10 +634,7 @@
         artist: "Kyo & Wave",
         genre: "Hip-Hop",
         durationSec: 18,
-        desc: {
-          en: "Muddy sub bass clash & dry vocals vs polished velvet commercial trap bounce",
-          ru: "Конфликт бочки с саб-басом и сухой голос против бархатного хип-хоп саунда"
-        },
+        desc: { en: "", ru: "" },
         tags: ["Hip-Hop", "808"],
         urlBefore: "", 
         urlAfter: "",
@@ -678,10 +646,7 @@
         artist: "Tech & Sound Podcast",
         genre: "Podcast",
         durationSec: 16,
-        desc: {
-          en: "Room reflections & noise floor vs crystalline broadcast studio voice clarity",
-          ru: "Запись с комнатным эхом и шумом кондиционера против кристального студийного голоса"
-        },
+        desc: { en: "", ru: "" },
         tags: ["Podcast", "Vocal"],
         urlBefore: "", 
         urlAfter: "",
@@ -693,10 +658,7 @@
         artist: "Mariya Sol",
         genre: "Vocal",
         durationSec: 18,
-        desc: {
-          en: "Thin dynamic microphone capture vs wide, warm acoustic ballad depth",
-          ru: "Сухой микрофонный сигнал акустики и вокала против теплого студийного пространства"
-        },
+        desc: { en: "", ru: "" },
         tags: ["Vocal", "Acoustic"],
         urlBefore: "", 
         urlAfter: "",
@@ -713,18 +675,13 @@
         nav_contact: "Contact",
         nav_book: "Book a Mix",
         hero_status: "Accepting new projects • Fast 48h turnaround",
-        hero_title_1: "Transforming raw stems into",
-        hero_title_2: " industry-standard commercial sound",
-        hero_desc: "Welcome to YOURWOWMIX. High-definition mixing and analog-modeled mastering built to compete at full club volume, in studio headphones, and on smart speakers. Hear the unpolished raw track versus the mastered track in real-time below.",
+        hero_title_1: "Your music deserves the charts!",
+        hero_title_2: "Transforming raw demos and AI tracks into polished, professional songs.",
+        hero_desc: "Hey! Welcome to YOURWOWMIX. We bring your sound to perfection so your music hits hard at any volume — from tiny phone speakers and wireless earbuds to car sound systems and massive club rigs. Hit play in the player right now and compare the unmixed multitrack to the finished master.",
         hero_btn_listen: "Listen to A/B Comparison",
         hero_btn_portfolio: "Explore Portfolio",
         stat_latency: "Zero-latency A/B",
         stat_streaming: "Streaming Standards",
-        meter_title: "DSP Monitoring Console",
-        meter_lufs: "LUFS Target (Streaming Platforms)",
-        meter_peak: "True Peak Inter-Sample",
-        meter_width: "Stereo Field Correlation",
-        meter_info: "The A/B player utilizes a precision dual-engine audio pipeline. Instant switching happens with millisecond micro-crossfades so your ears hear the pure tonal transformation without lag.",
         player_mode_label: "Playback Channel:",
         mode_raw: "RAW (BEFORE)",
         mode_master: "MASTER (AFTER)",
@@ -748,14 +705,21 @@
         services_title: "Clear & Transparent Pricing",
         services_desc: "Every package includes 3 free revision rounds, full instrumental/acapella exports, and radio/streaming loudness compliance.",
 
-        /* Pricing Tiers (USD, "FROM") */
+        /* Pricing Tiers */
         tier_mixmaster_title: "Full Mixing + Mastering",
-        tier_mixmaster_desc: "Comprehensive multi-track treatment up to 48 stems: phase alignment, vocal treatment, dynamic balance, depth placement, and commercial master.",
+        tier_mixmaster_desc: "Frequency balancing, spatial design, dynamic processing, and dense layer arrangement for transparent and punchy sound. Plus mastering: loudness & dynamic matching to commercial streaming, radio, and club standards, mono-compatibility verification, and multi-device translation.",
         tier_mixmaster_price: "FROM $120",
         per_multitrack: "/ song",
         tier_mixmaster_feat1: "Sub-bass & drum phase optimization",
         tier_mixmaster_feat2: "Depth, analog color & 3D stereo width",
         tier_mixmaster_feat3: "Full commercial master included",
+
+        tier_airemake_title: "AI Remake (Turnkey AI Overhaul)",
+        tier_airemake_desc: "Transcription of harmony, melodies, and song structure from generated AI audio. Replacing low-fidelity AI artifacts with high-end virtual instruments, samples, and analog synths. Re-recording with live vocals/performers based on your AI guide, followed by a complete multitrack mix & master.",
+        tier_airemake_price: "FROM $250",
+        tier_airemake_feat1: "Harmonic & melodic transcription",
+        tier_airemake_feat2: "Artifact removal & pro sound replacement",
+        tier_airemake_feat3: "Full multitrack mix and master",
 
         tier_master_title: "Stem / Stereo Mastering",
         tier_master_desc: "Final stereo master or stem mastering (up to 6 stems). Harmonic saturation, precision EQ curves, stereo imaging, and streaming limiting.",
@@ -798,11 +762,12 @@
         form_name_label: "Your Name / Artist Name",
         form_contact_label: "WhatsApp, Telegram or Email",
         form_service_label: "Desired Service",
-        opt_mixmaster: "Full Mixing + Mastering (FROM $120)",
-        opt_master: "Stem / Stereo Mastering (FROM $60)",
-        opt_vocal: "Vocal Tuning & Alignment (FROM $50)",
-        opt_drums: "Drum Editing & Quantization (FROM $50)",
-        opt_podcast: "Restoration & Podcasts (FROM $50)",
+        opt_mixmaster: "Full Mixing + Mastering (FROM $120 / ОТ 11 000 ₽)",
+        opt_airemake: "AI Remake (FROM $250 / ОТ 23 000 ₽)",
+        opt_master: "Stem / Stereo Mastering (FROM $60 / ОТ 5 500 ₽)",
+        opt_vocal: "Vocal Tuning & Alignment (FROM $50 / ОТ 4 500 ₽)",
+        opt_drums: "Drum Editing & Quantization (FROM $50 / ОТ 4 500 ₽)",
+        opt_podcast: "Restoration & Podcasts (FROM $50 / ОТ 4 500 ₽)",
         form_link_label: "Stem Link (Cloud Storage URL)",
         form_msg_label: "Project Notes & Reference Tracks",
         btn_submit: "Submit Project Request",
@@ -813,7 +778,7 @@
         toast_vol_match_off: "Volume Match: OFF (Full master loudness)",
         toast_loop_on: "Looping enabled",
         toast_loop_off: "Looping disabled",
-        toast_sent: "Project request submitted successfully!"
+        toast_sent: "Opening your email client..."
       },
       ru: {
         nav_home: "Главная",
@@ -823,18 +788,13 @@
         nav_contact: "Контакты",
         nav_book: "Заказать сведение",
         hero_status: "Принимаю новые треки в работу • Сроки от 48ч",
-        hero_title_1: "Превращаю демо-записи в",
-        hero_title_2: " коммерческий звук топ-уровня",
-        hero_desc: "Добро пожаловать в YOURWOWMIX. Профессиональное сведение и мастеринг, которые звучат мощно на клубной акустике, в наушниках и смартфонах. Сравните сырой мультитрек с мастером прямо здесь в плеере.",
+        hero_title_1: "Твоя музыка достойна чартов!",
+        hero_title_2: "Превращаю демо-записи и треки из нейросетей в полноценные, профессионально звучащие песни.",
+        hero_desc: "Привет! Это YOURWOWMIX. Мы доводим звук до идеала, чтобы музыка качала на любой громкости — от крошечного динамика телефона и беспроводных вкладышей до звука в авто и клубных порталов. Жмите play в плеере прямо сейчас и сравните исходный мультитрек с готовым мастером.",
         hero_btn_listen: "Слушать сравнение A / B",
         hero_btn_portfolio: "Каталог работ",
         stat_latency: "Без задержки A/B",
         stat_streaming: "Готово под стриминги",
-        meter_title: "DSP Консоль мониторинга",
-        meter_lufs: "Целевой LUFS (Стриминг платформы)",
-        meter_peak: "True Peak предел",
-        meter_width: "Стереокорреляция",
-        meter_info: "A/B плеер работает на базе точного аудиодвижка. Мгновенное переключение происходит через миллисекундный микро-кроссфейд без рассинхрона и щелчков.",
         player_mode_label: "Канал воспроизведения:",
         mode_raw: "RAW (ДО)",
         mode_master: "MASTER (ПОСЛЕ)",
@@ -858,14 +818,21 @@
         services_title: "Прозрачные расценки",
         services_desc: "В каждый тариф включены 3 бесплатных круга правок, экспорт инструментала и соответствие стандартам громкости стримингов.",
 
-        /* Pricing Tiers (RUB, "ОТ", rounded) */
+        /* Pricing Tiers (RUB) */
         tier_mixmaster_title: "Полное сведение + Мастеринг",
-        tier_mixmaster_desc: "Глубокая проработка мультитрека до 48 дорожек: баланс планов, динамика, частотная чистка, пространство плюс коммерческий мастеринг.",
+        tier_mixmaster_desc: "Частотная балансировка, создание пространства, динамическая обработка и выстраивание плотных планов, чтобы трек звучал прозрачно и мощно. Плюс мастеринг — подгонка по громкости и динамике под коммерческие стандарты стримингов, радио и клубов, проверка моносовместимости и читаемости на любых устройствах.",
         tier_mixmaster_price: "ОТ 11 000 ₽",
         per_multitrack: "/ трек",
         tier_mixmaster_feat1: "Фазовая оптимизация бочки и саб-баса",
         tier_mixmaster_feat2: "Аналоговая склейка и 3D стереополе",
         tier_mixmaster_feat3: "Полный коммерческий мастер включен",
+
+        tier_airemake_title: "AI-ремейк (Перебивка ИИ-треков под ключ)",
+        tier_airemake_desc: "Снятие гармонии, мелодий и структуры из сгенерированного аудиофайла, замена артефактных нейросетевых звуков на качественные инструменты, семплы и синтезаторы. Перезапись живым исполнителем (вами по референсу из ИИ). Сведение мультитрека и мастеринг.",
+        tier_airemake_price: "ОТ 23 000 ₽",
+        tier_airemake_feat1: "Снятие гармонии и структуры с нейросети",
+        tier_airemake_feat2: "Замена артефактов на живые инструменты/семплы",
+        tier_airemake_feat3: "Сведение мультитрека и коммерческий мастер",
 
         tier_master_title: "Стем / Стерео Мастеринг",
         tier_master_desc: "Финальный стерео-мастер или стем-мастеринг (до 6 стемов). Аналоговая сатурация, точная эквализация, стереобаза и лимитирование.",
@@ -909,6 +876,7 @@
         form_contact_label: "WhatsApp, Telegram или Email",
         form_service_label: "Интересующая услуга",
         opt_mixmaster: "Полное сведение + мастеринг (ОТ 11 000 ₽)",
+        opt_airemake: "AI-ремейк (Перебивка ИИ-треков под ключ) (ОТ 23 000 ₽)",
         opt_master: "Стем / стерео мастеринг (ОТ 5 500 ₽)",
         opt_vocal: "Тюнинг вокала (ОТ 4 500 ₽)",
         opt_drums: "Выравнивание барабанов (ОТ 4 500 ₽)",
@@ -923,11 +891,21 @@
         toast_vol_match_off: "Выравнивание ВЫКЛ (Master громче)",
         toast_loop_on: "Зацикливание включено",
         toast_loop_off: "Зацикливание выключено",
-        toast_sent: "Заявка успешно отправлена!"
+        toast_sent: "Открываем ваш почтовый клиент..."
       }
     };
 
     let currentLang = 'en';
+
+    function selectService(serviceValue) {
+      const select = document.getElementById('form-service');
+      for (let i = 0; i < select.options.length; i++) {
+        if (select.options[i].value.includes(serviceValue) || serviceValue.includes(select.options[i].value)) {
+          select.selectedIndex = i;
+          break;
+        }
+      }
+    }
 
     /* Web Audio Dual-Pipeline Engine */
     class AudioComparisonEngine {
@@ -1288,7 +1266,6 @@
       renderCurrentTrackInfo() {
         const track = engine.getCurrentTrack();
         document.getElementById('current-track-title').innerText = `${track.title} — ${track.artist}`;
-        document.getElementById('current-track-desc').innerText = track.desc[currentLang];
         document.getElementById('time-total').innerText = this.formatTime(track.durationSec);
         document.getElementById('time-current').innerText = this.formatTime(engine.pausedAt);
 
@@ -1371,7 +1348,6 @@
               
               <h4 class="text-lg font-bold text-white mt-3 group-hover:text-cyan-300 transition">${track.title}</h4>
               <p class="text-xs text-slate-400 mt-0.5">${track.artist}</p>
-              <p class="text-xs text-slate-300/80 mt-3 line-clamp-2 leading-relaxed">${track.desc[currentLang]}</p>
             </div>
 
             <div class="mt-5 pt-3 border-t border-slate-800 flex items-center justify-between">
@@ -1466,13 +1442,29 @@
         form.addEventListener('submit', (e) => {
           e.preventDefault();
           const name = document.getElementById('form-name').value;
+          const contact = document.getElementById('form-contact').value;
+          const service = document.getElementById('form-service').value;
+          const link = document.getElementById('form-link').value;
+          const message = document.getElementById('form-message').value;
+
+          const emailTo = "shevrec2020@gmail.com";
+          const subject = encodeURIComponent(`YOURWOWMIX Request: ${service} - ${name}`);
+          const body = encodeURIComponent(
+            `Name / Artist: ${name}\n` +
+            `Contact (WhatsApp/Telegram/Email): ${contact}\n` +
+            `Service: ${service}\n` +
+            `Stems Link: ${link}\n\n` +
+            `Project Notes:\n${message}`
+          );
+
           const status = document.getElementById('form-status');
           status.classList.remove('hidden');
           status.innerText = currentLang === 'en' 
-            ? `Thank you, ${name}! Your request was received at YOURWOWMIX.`
-            : `Спасибо, ${name}! Заявка принята студией YOURWOWMIX.`;
+            ? `Opening email client...` 
+            : `Открываем почтовый клиент...`;
           this.showToast(TRANSLATIONS[currentLang].toast_sent);
-          form.reset();
+
+          window.location.href = `mailto:${emailTo}?subject=${subject}&body=${body}`;
         });
       },
 
