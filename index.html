@@ -122,7 +122,7 @@
   </header>
 
   <main class="flex-grow pt-24 pb-20">
-    <!-- Hero Section (без DSP консоли) -->
+    <!-- Hero Section -->
     <section id="hero" class="relative px-4 sm:px-6 py-12 md:py-20 max-w-5xl mx-auto">
       <div class="absolute -top-10 left-1/2 -translate-x-1/2 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>
 
@@ -312,7 +312,7 @@
       <!-- 6-Card Responsive Pricing Grid -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         
-        <!-- 01: Full Mix & Master (Flagship) -->
+        <!-- 01: Full Mix & Master -->
         <div class="glass-panel p-7 rounded-3xl border-2 border-cyan-500/50 flex flex-col justify-between relative shadow-2xl shadow-cyan-500/10">
           <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 px-3 py-0.5 rounded-full bg-cyan-400 text-studio-950 font-bold text-[11px] uppercase tracking-wide" data-i18n="badge_popular">
             Most Popular
@@ -347,7 +347,7 @@
           <a href="#contact" onclick="selectService('Full Mixing + Mastering (FROM $120 / ОТ 11 000 ₽)')" class="mt-8 block text-center py-3 rounded-xl bg-cyan-400 hover:bg-cyan-300 text-sm font-bold text-studio-950 transition shadow-lg shadow-cyan-500/25" data-i18n="btn_book_now">Book This Service</a>
         </div>
 
-        <!-- 02: AI Remake (New Service) -->
+        <!-- 02: AI Remake -->
         <div class="glass-panel p-7 rounded-3xl border border-slate-800 flex flex-col justify-between hover:border-slate-700 transition">
           <div>
             <div class="inline-block p-2 rounded-xl bg-studio-800 text-cyan-400 mb-4 font-mono text-xs">
@@ -601,7 +601,7 @@
 
   <script>
     /* ==========================================================================
-       YOURWOWMIX • PORTFOLIO TRACK CONFIGURATION (EDIT YOUR TRACKS HERE)
+       YOURWOWMIX • PORTFOLIO TRACK CONFIGURATION
        ========================================================================== */
     const PORTFOLIO_TRACKS = [
       {
@@ -618,14 +618,14 @@
       },
       {
         id: "track-2",
-        title: "Blood & Rust",
-        artist: "Iron Horizon",
-        genre: "Rock",
-        durationSec: 18,
+        title: "Truth (remix YWM)",
+        artist: "Eight String Theory",
+        genre: "Symphonic Metal",
+        durationSec: 210,
         desc: { en: "", ru: "" },
         tags: ["Rock", "Metal"],
-        urlBefore: "", 
-        urlAfter: "",
+        urlBefore: "audio/Eight String Theory_Truth_Before.flac", 
+        urlAfter: "audio/Eight String Theory_Truth_After.flac",
         synthType: "rock"
       },
       {
@@ -705,7 +705,6 @@
         services_title: "Clear & Transparent Pricing",
         services_desc: "Every package includes 3 free revision rounds, full instrumental/acapella exports, and radio/streaming loudness compliance.",
 
-        /* Pricing Tiers */
         tier_mixmaster_title: "Full Mixing + Mastering",
         tier_mixmaster_desc: "Frequency balancing, spatial design, dynamic processing, and dense layer arrangement for transparent and punchy sound. Plus mastering: loudness & dynamic matching to commercial streaming, radio, and club standards, mono-compatibility verification, and multi-device translation.",
         tier_mixmaster_price: "FROM $120",
@@ -818,7 +817,6 @@
         services_title: "Прозрачные расценки",
         services_desc: "В каждый тариф включены 3 бесплатных круга правок, экспорт инструментала и соответствие стандартам громкости стримингов.",
 
-        /* Pricing Tiers (RUB) */
         tier_mixmaster_title: "Полное сведение + Мастеринг",
         tier_mixmaster_desc: "Частотная балансировка, создание пространства, динамическая обработка и выстраивание плотных планов, чтобы трек звучал прозрачно и мощно. Плюс мастеринг — подгонка по громкости и динамике под коммерческие стандарты стримингов, радио и клубов, проверка моносовместимости и читаемости на любых устройствах.",
         tier_mixmaster_price: "ОТ 11 000 ₽",
@@ -1033,7 +1031,7 @@
         const leftB = bufferB.getChannelData(0);
         const rightB = bufferB.getChannelData(1);
 
-        const bpm = track.genre === 'Hip-Hop' ? 130 : track.genre === 'Rock' ? 120 : 124;
+        const bpm = track.genre === 'Hip-Hop' ? 130 : track.genre === 'Rock' || track.genre === 'Symphonic Metal' ? 120 : 124;
         const beatSec = 60 / bpm;
 
         for (let i = 0; i < length; i++) {
